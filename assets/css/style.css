@@ -1,0 +1,41 @@
+/* Estilo para a imagem de fundo e overlay */
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Faz a imagem ocupar a altura total da janela de visualização */
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    object-position: center 25%; /* Ajusta a imagem dentro do contêiner */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+}
+
+/* Estilo para a navbar */
+.navbar-overlay {
+    position: absolute; /* Faz a navbar flutuar sobre a imagem */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ajuste a largura da navbar conforme necessário */
+    z-index: 10; /* Garante que a navbar fique sobre a imagem */
+    background-color: transparent !important; /* Remove a cor de fundo */
+}
+
+.nav-link{
+    color: white;
+}
+
+
