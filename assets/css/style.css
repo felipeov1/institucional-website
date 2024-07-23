@@ -1,8 +1,41 @@
-/* Estilo para a imagem de fundo e overlay */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Style for navbar */
+.navbar {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: transparent !important;
+}
+
+.nav-link {
+    color: white;
+}
+
+/* Style for line below nav */
+.line {
+    width: 100%;
+    height: 0.1px; 
+    background-color: rgba(255, 255, 255, 0.151); 
+    margin-top: 15px; 
+}
+
+/* Style main banner */
 .image-container {
     position: relative;
     width: 100%;
-    height: 100vh; /* Faz a imagem ocupar a altura total da janela de visualização */
+    height: 65vh;
     overflow: hidden;
 }
 
@@ -11,7 +44,6 @@
     height: 100%;
     object-fit: cover;
     display: block;
-    object-position: center 25%; /* Ajusta a imagem dentro do contêiner */
 }
 
 .overlay {
@@ -20,22 +52,115 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background-color: rgba(60, 10, 114, 0.9); 
     pointer-events: none;
 }
 
-/* Estilo para a navbar */
-.navbar-overlay {
-    position: absolute; /* Faz a navbar flutuar sobre a imagem */
-    top: 0;
-    left: 0;
-    width: 100%; /* Ajuste a largura da navbar conforme necessário */
-    z-index: 10; /* Garante que a navbar fique sobre a imagem */
-    background-color: transparent !important; /* Remove a cor de fundo */
+.banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    padding: 20px;
+    max-width: 80%;
 }
 
-.nav-link{
-    color: white;
+.banner-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
 }
+
+.banner-content p {
+    font-size: 1.25rem;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+
+/* Style for floating section */
+.floating-section {
+    position: absolute;
+    top: 60vh; 
+    left: 10%;
+    width: 80%;
+    height: 100px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 5;
+    border-radius: 8px;
+}
+
+.floating-section .statistics {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.floating-section .stat-box {
+    max-width: 200px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #333;
+    flex-direction: column; 
+    padding: 10px; 
+}
+
+.floating-section .stat-box i {
+    font-size: 1.7rem; 
+    margin-bottom: 8px;
+}
+
+.floating-section .number-item {
+    font-size: 1.5rem; 
+    font-weight: bold;
+}
+
+.floating-section .stat-item {
+    font-size: 1rem; 
+}
+
+.floating-section .number-stats{
+    display: flex;
+    align-items: baseline;
+}
+
+.btn-talk-stats {
+    appearance: button;
+    backface-visibility: hidden;
+    background-color: #405cf5;
+    border-radius: 6px;
+    border-width: 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    height: 44px;
+    outline: none;
+    overflow: hidden;
+    padding: 0 25px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+  }
+
 
 
