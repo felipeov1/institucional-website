@@ -2,6 +2,8 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    /* background-color: #ffffff; */
+    background-color: #f8fcfc;
 }
 
 /* Style for navbar */
@@ -26,9 +28,9 @@ body {
 /* Style for line below nav */
 .line {
     width: 100%;
-    height: 0.1px; 
-    background-color: rgba(255, 255, 255, 0.151); 
-    margin-top: 15px; 
+    height: 0.1px;
+    background-color: rgba(255, 255, 255, 0.151);
+    margin-top: 15px;
 }
 
 /* Style main banner */
@@ -52,7 +54,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(60, 10, 114, 0.9); 
+    background-color: rgba(60, 10, 114, 0.9);
     pointer-events: none;
 }
 
@@ -76,31 +78,18 @@ body {
     font-size: 1.25rem;
 }
 
-.btn-primary {
-    background-color: #007bff;
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    transition: background-color 0.3s;
-}
-
-.btn-primary:hover {
-    background-color: #0056b3;
-}
-
 
 /* Style for floating section */
 .floating-section {
     position: absolute;
-    top: 60vh; 
+    top: 60vh;
     left: 10%;
     width: 80%;
     height: 100px;
     background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
     padding: 20px;
     box-sizing: border-box;
     z-index: 5;
@@ -121,25 +110,25 @@ body {
     text-align: center;
     font-size: 1.2rem;
     color: #333;
-    flex-direction: column; 
-    padding: 10px; 
+    flex-direction: column;
+    padding: 10px;
 }
 
 .floating-section .stat-box i {
-    font-size: 1.7rem; 
+    font-size: 1.7rem;
     margin-bottom: 8px;
 }
 
 .floating-section .number-item {
-    font-size: 1.5rem; 
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
 .floating-section .stat-item {
-    font-size: 1rem; 
+    font-size: 1rem;
 }
 
-.floating-section .number-stats{
+.floating-section .number-stats {
     display: flex;
     align-items: baseline;
 }
@@ -147,7 +136,7 @@ body {
 .btn-talk-stats {
     appearance: button;
     backface-visibility: hidden;
-    background-color: #405cf5;
+    background-color:  rgba(60, 10, 114, 0.9);
     border-radius: 6px;
     border-width: 0;
     box-sizing: border-box;
@@ -160,7 +149,95 @@ body {
     position: relative;
     text-align: center;
     width: 100%;
-  }
+    transition: background-color 0.3s ease, filter 0.3s ease;
+
+}
+
+.btn-talk-stats:hover {
+    background-color: rgba(60, 10, 114, 0.9) !important;
+    filter: brightness(80%);
+}
+
+.events-container {
+    margin-top: 150px; 
+}
 
 
+.events-container h2 {
+    position: relative;
+    display: inline-block;
+    padding-left: 20px;
+}
 
+.events-container h2::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 3px; 
+    background-color: black; 
+}
+
+/* events section */
+.rectangle-container {
+    display: flex;
+    margin-top: 50px;
+}
+
+.rectangle {
+    display: flex;
+    align-items: center;
+    width: fit-content; 
+    height: 60px; 
+    background-color: #ffffff;
+    border-radius: 1px;
+    border: 1px solid rgba(0, 0, 0, 0.274);
+    padding: 0px 10px 0px 10px;
+    transition: background-color 0.3s, border-color 0.3s;
+    cursor: pointer; 
+    font-weight: 600;
+    color: #686868;
+}
+
+.rectangle:focus,
+.rectangle.selected {
+    background-color: #6a0dad; 
+    border-color: #6a0dad;
+    outline: none;
+    color: white;
+}
+
+.search-container {
+    position: relative;
+    display: inline-block;
+    width: 20%;
+}
+
+.search-input {
+    width: 100%;
+    padding: 10px 40px 10px 10px; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.search-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 40px; 
+    border: none;
+    background-color: #6f42c1; 
+    color: white;
+    border-radius: 0 5px 5px 0; 
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-button .fa-search {
+    font-size: 18px; 
+}
