@@ -73,7 +73,7 @@
                     <i class="fa-solid fa-earth-americas" style="margin-right: 5px;"></i>
                     <div class="number-item">20+</div>
                 </div>
-                <div class="stat-item">de cidades <br>atendidas</div>
+                <div class="stat-item">cidades <br>atendidas</div>
             </div>
             <div class="stat-box">
                 <div class="number-stats">
@@ -91,32 +91,82 @@
 
     <!-- start events section -->
     <div class="container events-container" style="height: 500px;">
-        <div class="text-events-container">
-            <h2>Agenda de Eventos</h2>
-            <p class="w-50">Descubra nossa programação de eventos! Veja quais eventos já foram realizados e planeje sua
-                participação nos próximos. Mantenha-se atualizado sobre nossas atividades passadas e futuras para não
-                perder nenhum momento especial.</p>
+        <div class="mainEvents">
+            <div class="text-events-container">
+                <h2>Agenda de Eventos</h2>
+                <p class="w-50">Descubra nossa programação de eventos! Veja quais eventos já foram realizados e
+                    planeje
+                    sua
+                    participação nos próximos. Mantenha-se atualizado sobre nossas atividades passadas e futuras
+                    para
+                    não
+                    perder nenhum momento especial.</p>
+            </div>
+            <div class="search-container">
+                <input type="text" placeholder="Buscar evento" class="search-input">
+                <button class="search-button">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
         </div>
-        <div class="search-container">
-            <input type="text" placeholder="Buscar..." class="search-input">
-            <button class="search-button">
-                <i class="fa fa-search"></i> 
-            </button>
+        <div class="custom-select-container mt-3">
+            <select>
+                <option value="setembro1-7">Setembro 1-7</option>
+                <option value="setembro8-14">Setembro 8-14</option>
+                <option value="setembro15-21">Setembro 15-21</option>
+                <option value="setembro22-28">Setembro 22-28</option>
+                <option value="outubro1-7">Outubro 1-7</option>
+                <option value="outubro8-14">Outubro 8-14</option>
+                <option value="outubro15-21">Outubro 15-21</option>
+            </select>
         </div>
         <div class="rectangle-container">
-            <div class="rectangle" tabindex="0">14 de Dezembro</div>
-            <div class="rectangle" tabindex="0">14 de Dezembro</div>
-            <div class="rectangle" tabindex="0">14 de Dezembro</div>
-            <div class="rectangle" tabindex="0">14 de Dezembro</div>
-            <div class="rectangle" tabindex="0">14 de Dezembro</div>
-            <div class="rectangle" tabindex="0">14 de Dezembro</div>
-            <div class="rectangle" tabindex="0">14 de Dezembro</div>
-            <div class="rectangle" tabindex="0">14 de Dezembro</div>
+            <div class="rectangle" tabindex="0" onclick="showEvent(1)">
+                <div class="day">SEG</div>
+                <div num="num-day">1</div>
+            </div>
+            <div class="rectangle" tabindex="0" onclick="showEvent(2)">
+                <div class="day">SEG</div>
+                <div num="num-day">1</div>
+            </div>
+            <div class="rectangle" tabindex="0" onclick="showEvent(3)">
+                <div class="day">SEG</div>
+                <div num="num-day">1</div>
+            </div>
+            <div class="rectangle" tabindex="0" onclick="showEvent(4)">
+                <div class="day">SEG</div>
+                <div num="num-day">1</div>
+            </div>
+            <div class="rectangle" tabindex="0" onclick="showEvent(4)">
+                <div class="day">SEG</div>
+                <div num="num-day">1</div>
+            </div>
+            <div class="rectangle" tabindex="0" onclick="showEvent(4)">
+                <div class="day">SEG</div>
+                <div num="num-day">1</div>
+            </div>
+            <div class="rectangle" tabindex="0" onclick="showEvent(4)">
+                <div class="day">SEG</div>
+                <div num="num-day">1</div>
+            </div>
+        </div>
+
+        <div class="event-content" id="eventContent" style="display: none; margin-top: 20px;">
+            <div class="event-text" id="eventText" style="width: 50%; float: left;"></div>
+            <div class="event-image col-3" id="eventImage" style="width: 50%; float: right;"></div>
         </div>
     </div>
     <!-- end events section -->
 
+
+
+    <script src="/assets/js/home.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+
+
+
 </body>
 
 </html>
