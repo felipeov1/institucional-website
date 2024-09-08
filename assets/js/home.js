@@ -1,3 +1,39 @@
+function animateValue(el, start, end, duration) {
+    let startTimestamp = null;
+    const step = (timestamp) => {
+        if (!startTimestamp) startTimestamp = timestamp;
+        const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+        el.innerText = Math.floor(progress * (end - start) + start) + (el.dataset.suffix || '');
+        if (progress < 1) {
+            window.requestAnimationFrame(step);
+        }
+    };
+    window.requestAnimationFrame(step);
+}
+
+function startCounting() {
+    const stats = document.querySelectorAll('.number-item');
+    stats.forEach((stat) => {
+        const endValue = parseInt(stat.getAttribute('data-target'), 10);
+        animateValue(stat, 0, endValue, 1000);
+    });
+}
+
+const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            startCounting();  
+            observer.unobserve(entry.target); 
+        }
+    });
+});
+
+const statSection = document.querySelector('.statistics');
+observer.observe(statSection);
+
+
+////////// EVENTS CALENDAR
+
 function showEvent(eventNumber) {
     const eventContent = document.getElementById("eventContent");
     const eventText = document.getElementById("eventText");
@@ -19,3 +55,29 @@ function showEvent(eventNumber) {
 
     eventContent.style.display = "block";
 }
+
+
+function animateNumbers() {
+    const counters = document.querySelectorAll('.number-item');
+    const speed = 80;
+
+    counters.forEach(counter => {
+        const updateCount = () => {
+            const target = +counter.getAttribute('data-target');
+            const count = +counter.innerText.replace(/\D/g, '');
+
+            const increment = target / speed;
+
+            if (count < target) {
+                counter.innerText = Math.ceil(count + increment) + counter.innerText.slice(-1);
+                setTimeout(updateCount, 10);
+            } else {
+                counter.innerText = target + counter.innerText.slice(-1); o
+            }
+        };
+
+        updateCount();
+    });
+}
+
+window.addEventListener('load', animateNumbers);
