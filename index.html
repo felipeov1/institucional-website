@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="PT-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -47,48 +48,45 @@
             <h1>COM MAIS DIVERSÃO!</h1>
             <p>Alugue brinquedos para eventos infantis e proporcione momentos inesquecíveis. Explore nossa vasta seleção
                 de brinquedos e crie um evento que as crianças vão adorar!</p>
-            <button class="btn-about-more">SAIBA MAIS</button>
-            <button class="btn-about-more">SAIBA MAIS</button>
+            <div class="btns-container-about-more mt-4">
+                <button class="btn-about-more me-3">SAIBA MAIS</button>
+                <button class="btn-about-more">SAIBA MAIS</button>
+            </div>
+
         </div>
     </div>
     <!-- end main banner  -->
 
     <!-- start floating section -->
     <div class="floating-section">
-        <div class="statistics">
-            <div class="stat-box">
-                <div class="number-stats">
-                    <i class="fa-solid fa-calendar-days" style="color: #570294; margin-right: 5px;"></i>
-                    <div class="number-item" data-target="100">0</div><p>+</p>
+        <div class="toys-cards-container">
+            <div class="toy-card">
+                <img src="assets/images/bungee-kids-small-2.jpeg" alt="Brinquedo 1" class="toy-image">
+                <div class="text-start p-3">
+                    <h3 class="toy-title">Brinquedo 1</h3>
+                    <p class="toy-description">Descrição curta do brinquedo 1.</p>
                 </div>
-                <div class="stat-item">eventos realizados com sucesso</div>
+                <button class="btn-toys-acquire">CONTRATAR BRINQUEDO</button>
             </div>
-            <div class="stat-box">
-                <div class="number-stats">
-                    <i class="fa-solid fa-people-group" style="color: #6A0DAD; margin-right: 5px;"></i>
-                    <div class="number-item" data-target="98">0</div><p>+</p>
+            <div class="toy-card">
+                <img src="assets/images/bungee-kids-small-2.jpeg" alt="Brinquedo 1" class="toy-image">
+                <div class="text-start p-3">
+                    <h3 class="toy-title">Brinquedo 1</h3>
+                    <p class="toy-description">Descrição curta do brinquedo 1.</p>
                 </div>
-                <div class="stat-item">de satisfação dos nossos clientes</div>
+                <button class="btn-toys-acquire">CONTRATAR BRINQUEDO</button>
             </div>
-            <div class="stat-box">
-                <div class="number-stats">
-                    <i class="fa-solid fa-earth-americas" style="color: #6A0DAD; margin-right: 5px;"></i>
-                    <div class="number-item" data-target="20">0</div><p>+</p>
+            <div class="toy-card">
+                <img src="assets/images/kids.jpg" alt="Brinquedo 1" class="toy-image">
+                <div class="text-start p-3">
+                    <h3 class="toy-title">Brinquedo 1</h3>
+                    <p class="toy-description">Descrição curta do brinquedo 1.</p>
                 </div>
-                <div class="stat-item">cidades <br>atendidas</div>
-            </div>
-            <div class="stat-box">
-                <div class="number-stats">
-                    <i class="fa-solid fa-trophy" style="color: #6A0DAD; margin-right: 5px;"></i>
-                    <div class="number-item" data-target="10">0</div><p>+</p>
-                </div>
-                <div class="stat-item">anos de experiência no mercado</div>
-            </div>
-            <div>
-                <button class="btn-talk-stats">Contrate agora</button>
+                <button class="btn-toys-acquire">CONTRATAR BRINQUEDO</button>
             </div>
         </div>
     </div>
+    <!-- end floating section -->
 
     <script>
 
@@ -97,70 +95,36 @@
     <!-- end floating section -->
 
     <!-- start events section -->
-    <div class="container events-container" style="height: 500px;">
-        <div class="mainEvents">
-            <div class="text-events-container">
-                <h2>Agenda de Eventos</h2>
-                <p class="w-50">Descubra nossa programação de eventos! Veja quais eventos já foram realizados e
-                    planeje
-                    sua
-                    participação nos próximos. Mantenha-se atualizado sobre nossas atividades passadas e futuras
-                    para
-                    não
-                    perder nenhum momento especial.</p>
-            </div>
+    <div class="events-container">
+        <h2 class="events-title">Agenda de Eventos</h2>
+        <div class="events-list">
             <div class="search-container">
+                <div class="filter-select me-3">
+                    <select id="event-filter" name="event-filter">
+                        <option value="" disabled selected>Status do evento</option>
+                        <option value="upcoming">Próximos Eventos</option>
+                        <option value="completed">Eventos Concluídos</option>
+                    </select>
+                </div>
                 <input type="text" placeholder="Buscar evento" class="search-input">
                 <button class="search-button">
                     <i class="fa fa-search"></i>
                 </button>
             </div>
-        </div>
-        <div class="custom-select-container mt-3">
-            <select>
-                <option value="setembro1-7">Setembro 1-7</option>
-                <option value="setembro8-14">Setembro 8-14</option>
-                <option value="setembro15-21">Setembro 15-21</option>
-                <option value="setembro22-28">Setembro 22-28</option>
-                <option value="outubro1-7">Outubro 1-7</option>
-                <option value="outubro8-14">Outubro 8-14</option>
-                <option value="outubro15-21">Outubro 15-21</option>
-            </select>
-        </div>
-        <div class="rectangle-container">
-            <div class="rectangle" tabindex="0" onclick="showEvent(1)">
-                <div class="day">SEG</div>
-                <div num="num-day">1</div>
+            <hr>
+            <div class="event-item">
+                <div class="event-date">01 SET</div>
+                <div class="event-image">
+                    <img src="assets/images/bungee-kids-small-2.jpeg" alt="Evento 1">
+                </div>
+                <div class="event-text">
+                    <h3>Titulo Evento 1</h3>
+                    <p style="max-width: 800px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, labore velit? Blanditiis, illum dolorem! Provident qui optio, quasi eveniet consequuntur blanditiis odio, explicabo, sit quis at</p>
+                    <p><i class="fa-solid fa-location-dot"></i> Rua ponta grossa 527, ibipora - PR</p>
+                </div>
+                <button class="btn-event-book">CONTRATAR</button>
             </div>
-            <div class="rectangle" tabindex="0" onclick="showEvent(2)">
-                <div class="day">SEG</div>
-                <div num="num-day">1</div>
-            </div>
-            <div class="rectangle" tabindex="0" onclick="showEvent(3)">
-                <div class="day">SEG</div>
-                <div num="num-day">1</div>
-            </div>
-            <div class="rectangle" tabindex="0" onclick="showEvent(4)">
-                <div class="day">SEG</div>
-                <div num="num-day">1</div>
-            </div>
-            <div class="rectangle" tabindex="0" onclick="showEvent(4)">
-                <div class="day">SEG</div>
-                <div num="num-day">1</div>
-            </div>
-            <div class="rectangle" tabindex="0" onclick="showEvent(4)">
-                <div class="day">SEG</div>
-                <div num="num-day">1</div>
-            </div>
-            <div class="rectangle" tabindex="0" onclick="showEvent(4)">
-                <div class="day">SEG</div>
-                <div num="num-day">1</div>
-            </div>
-        </div>
-
-        <div class="event-content" id="eventContent" style="display: none; margin-top: 20px;">
-            <div class="event-text" id="eventText" style="width: 50%; float: left;"></div>
-            <div class="event-image col-3" id="eventImage" style="width: 50%; float: right;"></div>
+            <hr>
         </div>
     </div>
     <!-- end events section -->
