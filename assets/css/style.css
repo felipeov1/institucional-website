@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap');
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Baloo 2', cursive;
     background-color: #ffffff !important;
 }
 
@@ -54,20 +54,20 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to top, 
-        rgba(60, 10, 114, 1.0) 20%, 
-        rgba(60, 10, 114, 0.9) 40%, 
-        rgba(60, 10, 114, 0.8) 60%, 
-        rgba(60, 10, 114, 0.7) 90%, 
-        rgba(60, 10, 114, 0.6) 100%);
+    background: linear-gradient(to top,
+            rgba(60, 10, 114, 1.0) 20%,
+            rgba(60, 10, 114, 0.9) 40%,
+            rgba(60, 10, 114, 0.8) 60%,
+            rgba(60, 10, 114, 0.7) 90%,
+            rgba(60, 10, 114, 0.6) 100%);
     pointer-events: none;
 }
 
 .banner-content {
     position: absolute;
-    top: 50%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
     color: white;
     padding: 20px;
@@ -75,15 +75,15 @@ body {
 }
 
 .banner-content h1 {
-    font-size: 4rem; 
+    font-size: 4rem;
     font-family: 'Baloo 2', cursive;
-    margin: 0; 
+    margin: 0;
 }
 
 .banner-content p {
-    font-size: 1.6rem; 
+    font-size: 1.6rem;
     font-family: 'Baloo 2', cursive;
-    margin: 0 auto; 
+    margin: 0 auto;
     text-align: center;
 }
 
@@ -121,8 +121,8 @@ body {
 
 .toys-cards-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 20px; 
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
 
 .toy-card {
@@ -135,13 +135,13 @@ body {
 }
 
 .toy-card:hover {
-    transform: scale(1.05); 
+    transform: scale(1.05);
 }
 
 .toy-image {
     width: 100%;
-    height: 200px; 
-    object-fit: cover; 
+    height: 200px;
+    object-fit: cover;
 }
 
 .toy-title {
@@ -155,7 +155,7 @@ body {
     color: #555;
 }
 
-.btn-toys-acquire{
+.btn-toys-acquire {
     background-color: #74b652;
     /* background-color: #44d23f; */
     border-radius: 1px;
@@ -173,7 +173,7 @@ body {
 
 /* Style for events section */
 .events-container {
-    background-color: #f8f9fa; 
+    background-color: #f8f9fa;
     /* background-color: #f5f5f5;  */
     padding: 50px 200px 50px 200px;
     box-sizing: border-box;
@@ -210,8 +210,8 @@ body {
 }
 
 .events-list {
-    max-height: 530px; 
-    overflow-y: auto; 
+    max-height: 530px;
+    overflow-y: auto;
     margin-bottom: 20px;
     padding-left: 10px !important;
     padding-right: 10px !important;
@@ -234,16 +234,16 @@ body {
     height: 100px;
     font-weight: bold;
     font-size: 20px;
-    color: #28104E; 
+    color: #28104E;
     /* color: #74b652;  */
     text-align: center;
     margin-right: 25px;
-    
-    
+
+
 }
 
 .event-image img {
-    width: 180px; 
+    width: 180px;
     height: 120px;
 }
 
@@ -253,8 +253,8 @@ body {
 }
 
 .events-list hr {
-    border: none; 
-    height: 1px; 
+    border: none;
+    height: 1px;
     background: rgba(0, 0, 0, 0.4);
     margin: 0px;
 }
@@ -274,13 +274,13 @@ body {
 .filter-select {
     position: relative;
     width: 100%;
-    max-width: 300px; 
+    max-width: 300px;
 }
 
 .filter-select select {
     appearance: none;
-    -webkit-appearance: none; 
-    -moz-appearance: none; 
+    -webkit-appearance: none;
+    -moz-appearance: none;
     background-color: #ffffff;
     border: none;
     padding: 12px 20px;
@@ -295,19 +295,19 @@ body {
 
 
 .filter-select select:focus {
-    border-color: none; 
-    box-shadow: none; 
+    border-color: none;
+    box-shadow: none;
 }
 
 .filter-select::after {
-    content: '▼'; 
+    content: '▼';
     position: absolute;
     top: 50%;
     right: 15px;
     transform: translateY(-50%);
     font-size: 12px;
     color: #333;
-    pointer-events: none; 
+    pointer-events: none;
 }
 
 
@@ -315,22 +315,129 @@ body {
 
 @media (max-width: 768px) {
     .banner-content h1 {
-        font-size: 3rem; 
+        font-size: 3rem;
     }
 
     .banner-content p {
-        font-size: 1.2rem; 
-        max-width: 90%; 
+        font-size: 1.2rem;
+        max-width: 90%;
     }
 }
 
 @media (max-width: 480px) {
     .banner-content h1 {
-        font-size: 2rem; 
+        font-size: 2rem;
     }
 
     .banner-content p {
-        font-size: 1rem; 
-        max-width: 100%; 
+        font-size: 1rem;
+        max-width: 100%;
     }
+}
+
+/* Style for  statistics section */
+.statistics-section {
+    padding: 0px;
+}
+
+
+.statistics-section {
+    position: relative;
+    background-color: #8373ce;
+    width: 100%;
+    height: 250px;
+}
+
+.stat-box {
+    background: rgba(187, 178, 178, 0.05);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    height: 140px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-wrap: wrap;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    align-items: center
+}
+
+.stat-box .icon {
+    font-size: 30px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    width: 60px;
+    height: 60px; 
+    border-radius: 50%; 
+    background-color: rgba(0, 0, 0, 0.2); 
+}
+
+.stat-signal{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.statistics {
+    width: 50%;
+}
+
+.stat-number {
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+}
+
+.stat-name {
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+}
+
+.statistics-section .row {
+    position: absolute;
+    top: 0;
+    left: 44%;
+    transform: translateX(-50%);
+    width: 82%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+
+}
+
+.btn-container {
+    position: absolute;
+    right: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.btn-hire-now {
+    width: 200px;
+    background-color: transparent;
+    border-radius: 6px;
+    border: 1px solid white;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    height: 44px;
+    outline: none;
+    overflow: hidden;
+    padding: 0 25px;
+    position: relative;
+    text-align: center;
+    transition: all 0.4s ease-out;
+}
+
+
+.btn-hire-now:hover {
+    opacity: 0.7;
 }
