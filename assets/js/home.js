@@ -30,3 +30,19 @@ const observer = new IntersectionObserver((entries, observer) => {
 
 const statSection = document.querySelector('.statistics-section');
 observer.observe(statSection);
+
+
+// Whatsapp form
+
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault(); 
+
+    const name = document.getElementById('name').value;
+    const message = document.getElementById('message').value;
+
+    const whatsappMessage = `${message} - ${name}`;
+    const whatsappNumber = '5543991052073'; 
+    const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+
+    window.open(whatsappURL, '_blank');
+});
