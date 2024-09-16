@@ -46,3 +46,24 @@ document.getElementById('contactForm').addEventListener('submit', function(event
 
     window.open(whatsappURL, '_blank');
 });
+
+
+// back to the top
+
+const backToTopBtn = document.getElementById("backToTopBtn");
+
+window.onscroll = function() {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        backToTopBtn.classList.add("show");
+    } else {
+        backToTopBtn.classList.remove("show");
+    }
+};
+
+backToTopBtn.addEventListener("click", function(event) {
+    event.preventDefault();
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});

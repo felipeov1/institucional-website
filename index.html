@@ -4,16 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Toystop - Início</title>
+    <title>Toystop</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <script src="https://kit.fontawesome.com/3fcdf21787.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="assets/images/logo-toys-top.png" />
 </head>
 
 <body>
+
     <!-- start nav -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-overlay"
+    <nav id="Inicio" class="navbar navbar-expand-lg bg-body-tertiary navbar-overlay"
         style="padding-top: 15px; padding-bottom: 15px;">
         <div class="container-fluid" style="
         padding-left: 100px;
@@ -28,40 +29,40 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Início</a>
+                        <a class="nav-link" href="#Inicio">Início</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Brinquedos</a>
+                        <a class="nav-link" href="#Brinquedos">Brinquedos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Sobre</a>
+                        <a class="nav-link" href="#Sobre">Sobre</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Eventos</a>
+                        <a class="nav-link" href="#Eventos">Eventos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Dúvidas</a>
+                        <a class="nav-link" href="#Duvidas">Dúvidas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contatos</a>
+                        <a class="nav-link" href="#Contatos">Contatos</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
     <!-- end nav  -->
+    <a href="#Inicio" id="backToTopBtn" style="text-decoration: none;">
+        <i class="fa-solid fa-angle-up"></i>
+    </a>
 
     <!-- start main banner  -->
     <div class="image-container">
         <img src="assets/images/bungee-kids.jpeg" class="img-fluid" alt="...">
         <div class="overlay"></div>
-        <div class="container banner-content">
+        <div class="container banner-content" id="Brinquedos">
             <h1>Eventos Incríveis com Diversão Garantida</h1>
             <p>Com nossos brinquedos, todo evento se torna mais vibrante e inesquecível!</p>
-            <div class="btns-container-about-more mt-4">
-                <button class="btn-about-more me-3" style="background-color: white; color: black;">EVENTOS</button>
-                <button class="btn-about-more ">SAIBA MAIS</button>
-            </div>
+
 
         </div>
     </div>
@@ -70,44 +71,59 @@
     <!-- start floating section -->
     <div class="floating-section">
         <div class="toys-cards-container">
-            <div class="toy-card">
-                <img src="assets/images/bungee-kids-small-2.jpeg" alt="Brinquedo 1" class="toy-image">
+            <div class="toy-card" style="object-position:50% 100% !important;">
+                <img src="assets/images/bungy-jump-2.png" alt="Brinquedo 1" class="toy-image">
                 <div class="text-start p-3">
-                    <h3 class="toy-title"><strong>Brinquedo 1</strong></h3>
+                    <h3 class="toy-title"><strong>Jump</strong></h3>
                     <p class="toy-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus culpa
                         voluptatibus necessitatibus possimus cupiditate nam reprehenderit eum repellendus, maxime ab
                         optio aliquid totam. In, officia dicta pariatur animi quidem rerum.</p>
                 </div>
-                <button class="btn-toys-acquire"><strong>CONTRATAR BRINQUEDO</strong></button>
+                <a href="https://wa.me/55XXXXXXXXXXX?text=Olá!%20Gostaria%20de%20falar%20sobre%20seus%20brinquedos."
+                    target="_blank">
+                    <button class="btn-toys-acquire">
+                        <strong>CONTRATAR BRINQUEDO</strong>
+                    </button>
+                </a>
             </div>
             <div class="toy-card">
-                <img src="assets/images/bungee-kids-small-2.jpeg" alt="Brinquedo 1" class="toy-image">
+                <img src="assets/images/bungy-jump.png" alt="Brinquedo 1" class="toy-image">
                 <div class="text-start p-3">
-                    <h3 class="toy-title"><strong>Brinquedo 1</strong></h3>
+                    <h3 class="toy-title"><strong>Park De Cama Elástica</strong></h3>
                     <p class="toy-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus culpa
                         voluptatibus necessitatibus possimus cupiditate nam reprehenderit eum repellendus, maxime ab
                         optio aliquid totam. In, officia dicta pariatur animi quidem rerum.</p>
                 </div>
-                <button class="btn-toys-acquire"><strong>CONTRATAR BRINQUEDO</strong></button>
+                <a href="https://wa.me/55XXXXXXXXXXX?text=Olá!%20Gostaria%20de%20falar%20sobre%20seus%20brinquedos."
+                    target="_blank">
+                    <button class="btn-toys-acquire">
+                        <strong>CONTRATAR BRINQUEDO</strong>
+                    </button>
+                </a>
             </div>
             <div class="toy-card">
-                <img src="assets/images/kids.jpg" alt="Brinquedo 1" class="toy-image">
+                <img src="assets/images/roller-coaster.png" alt="Brinquedo 1" class="toy-image">
                 <div class="text-start p-3">
-                    <h3 class="toy-title"><strong>Brinquedo 1</strong></h3>
+                    <h3 class="toy-title"><strong>Montanha Russa Virtual</strong></h3>
                     <p class="toy-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus culpa
                         voluptatibus necessitatibus possimus cupiditate nam reprehenderit eum repellendus, maxime ab
                         optio aliquid totam. In, officia dicta pariatur animi quidem rerum.</p>
                 </div>
-                <button class="btn-toys-acquire"><strong>CONTRATAR BRINQUEDO</strong></button>
+                <a href="https://wa.me/55XXXXXXXXXXX?text=Olá!%20Gostaria%20de%20falar%20sobre%20seus%20brinquedos."
+                target="_blank">
+                    <button class="btn-toys-acquire">
+                        <strong>CONTRATAR BRINQUEDO</strong>
+                    </button>
+                </a>
             </div>
         </div>
     </div>
     <!-- end floating section -->
 
     <div class="container-fluid"
-        style="background-image: url('assets/images/footer-bg.jpg'); background-size: cover; background-position: center; padding: 100px 50px 100px 50px;">
+        style="background-image: url('assets/images/footer-bg.jpg'); background-size: cover; background-position: center; padding: 100px 50px 100px 50px;"
+        id="Sobre">
         <div class="text-center mb-4">
-            <h6 style="margin-bottom: 5px;">Diversão em Ação</h6>
             <h1 style="margin-bottom: 92px;">Transforme Seus Eventos com Nossos Brinquedos</h1>
         </div>
 
@@ -155,7 +171,7 @@
 
 
     <!-- start statistics section -->
-    <div class="container-fluid statistics-section">
+    <div class="container-fluid statistics-section" id="statistics">
         <div class="row text-center">
             <div class="col-3">
                 <div class="stat-box">
@@ -230,7 +246,10 @@
             </div>
         </div>
         <div class="btn-container">
-            <button class="btn-hire-now">Contrate agora</button>
+            <a href="https://wa.me/55XXXXXXXXXXX?text=Olá!%20Gostaria%20de%20falar%20sobre%20seus%20brinquedos."
+                target="_blank">
+                <button class="btn-hire-now">Contrate agora</button>
+            </a>
         </div>
     </div>
     <!-- end statistics section -->
@@ -239,7 +258,7 @@
 
 
     <!-- start events section -->
-    <div class="events-container" style="background-color: white;">
+    <div class="events-container" style="background-color: white;" id="Eventos">
 
         <h1 class="events-title">AGENDA DE FESTAS E EVENTOS</h1>
 
@@ -333,29 +352,12 @@
 
     <!-- start FAQ section -->
     <div class="container-fluid"
-        style="background-image: url('assets/images/footer-bg.webp'); background-size: cover; background-position: center; padding: 60px 50px 60px 50px;">
+        style="background-image: url('assets/images/footer-bg.webp'); background-size: cover; background-position: center; padding: 60px 50px 60px 50px;"
+        id="Duvidas">
         <div class="faq-section">
             <h1 style="margin-bottom: 92px;">Perguntas Frequentes</h1>
 
             <div class="accordion" id="faqAccordion">
-                <div class="accordion-item" style="border: 1px solid #ddd; border-radius: 6px; margin-bottom: 10px;">
-                    <h2 class="accordion-header" id="faq1">
-                        <button class="accordion-button faq-header collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#faq1Collapse" aria-expanded="false" aria-controls="faq1Collapse"
-                            style="border-radius: 6px; border: 1px solid #ddd;">
-                            Qual é o prazo para entrega dos brinquedos?
-                        </button>
-                    </h2>
-                    <div id="faq1Collapse" class="accordion-collapse collapse" aria-labelledby="faq1"
-                        data-bs-parent="#faqAccordion">
-                        <div class="accordion-body faq-body">
-                            O prazo de entrega dos brinquedos é de até 24 horas antes do evento, dependendo da
-                            localização e
-                            disponibilidade.
-                        </div>
-                    </div>
-                </div>
-
                 <div class="accordion-item" style="border: 1px solid #ddd; border-radius: 6px; margin-bottom: 10px;">
                     <h2 class="accordion-header" id="faq2">
                         <button class="accordion-button faq-header collapsed" type="button" data-bs-toggle="collapse"
@@ -372,6 +374,7 @@
                         </div>
                     </div>
                 </div>
+
 
                 <div class="accordion-item" style="border: 1px solid #ddd; border-radius: 6px; margin-bottom: 10px;">
                     <h2 class="accordion-header" id="faq3">
@@ -390,16 +393,71 @@
                     </div>
                 </div>
 
-                <div class="faq-footer">
+
+                <div class="accordion-item" style="border: 1px solid #ddd; border-radius: 6px; margin-bottom: 10px;">
+                    <h2 class="accordion-header" id="faq6">
+                        <button class="accordion-button faq-header collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faq6Collapse" aria-expanded="false" aria-controls="faq6Collapse"
+                            style="border-radius: 6px; border: 1px solid #ddd;">
+                            Como é feito o processo de montagem e desmontagem dos brinquedos?
+                        </button>
+                    </h2>
+                    <div id="faq6Collapse" class="accordion-collapse collapse" aria-labelledby="faq6"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body faq-body">
+                            A montagem e desmontagem dos brinquedos são realizadas por nossa equipe especializada para garantir a segurança e a eficiência. Chegamos com antecedência para montar o brinquedo e o desmontamos após o evento.
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="accordion-item" style="border: 1px solid #ddd; border-radius: 6px; margin-bottom: 10px;">
+                    <h2 class="accordion-header" id="faq4">
+                        <button class="accordion-button faq-header collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faq4Collapse" aria-expanded="false" aria-controls="faq4Collapse"
+                            style="border-radius: 6px; border: 1px solid #ddd;">
+                            Quais são os horários disponíveis para os eventos?
+                        </button>
+                    </h2>
+                    <div id="faq4Collapse" class="accordion-collapse collapse" aria-labelledby="faq4"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body faq-body">
+                            Os horários disponíveis para eventos são flexíveis e podem ser ajustados conforme sua necessidade. Entre em contato conosco para verificar a disponibilidade no período desejado.
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="accordion-item" style="border: 1px solid #ddd; border-radius: 6px; margin-bottom: 10px;">
+                    <h2 class="accordion-header" id="faq4">
+                        <button class="accordion-button faq-header collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faq4Collapse" aria-expanded="false" aria-controls="faq4Collapse"
+                            style="border-radius: 6px; border: 1px solid #ddd;">
+                            Qual é o tamanho máximo do espaço necessário para os brinquedos?
+                        </button>
+                    </h2>
+                    <div id="faq4Collapse" class="accordion-collapse collapse" aria-labelledby="faq4"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body faq-body">
+                            O tamanho necessário para cada brinquedo varia. Recomendamos um espaço mínimo de 5x5 metros para garantir segurança e uma experiência divertida. Entre em contato conosco para obter as dimensões exatas de cada brinquedo.
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class="faq-footer" id="Contatos">
                     <p>Não encontrou sua resposta?</p>
                     <p>Estamos prontos para responder suas perguntas</p>
-                    <button>Entre em contato</button>
+                    <a href="https://wa.me/554391590383?text=Olá!%20Gostaria%20de%20falar%20sobre%20seus%20brinquedos."
+                        target="_blank">
+                        <button>Entre em contato</button>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
     <!-- end FAQ section -->
-     
+
 
 
     <!-- start contact section -->
@@ -425,10 +483,10 @@
             <div class="col-md-4"
                 style="display: flex; flex-direction: column; align-content: center; flex-wrap: wrap;">
                 <h2>Informações de contato</h2>
-                <strong>Celular:</strong>
-                <p>+55 43 XXXX-XXXX</p>
-                <strong>Email:</strong>
-                <p>example@email.com</p>
+                <strong style="font-size: 20px;">Celular:</strong>
+                <p style="font-size: 16px;">+55 43 9159-0383</p>
+                <strong style="font-size: 20px;">Email:</strong>
+                <p style="font-size: 16px;">laura.bungy@gmail.com</p>
             </div>
 
             <div class=" col-md-3">
@@ -469,12 +527,12 @@
                                 <h3>Acesso Rápido</h3>
                             </div>
                             <ul>
-                                <li><a href="#">Início</a></li>
-                                <li><a href="#">Brinquedos</a></li>
-                                <li><a href="#">Sobre</a></li>
-                                <li><a href="#">Eventos</a></li>
-                                <li><a href="#">Dúvidas</a></li>
-                                <li><a href="#">Contatos</a></li>
+                                <li><a href="#Inicio">Início</a></li>
+                                <li><a href="#Brinquedos">Brinquedos</a></li>
+                                <li><a href="#Sobre">Sobre</a></li>
+                                <li><a href="#Eventos">Eventos</a></li>
+                                <li><a href="#Duvidas">Dúvidas</a></li>
+                                <li><a href="#Contatos">Contatos</a></li>
                             </ul>
                         </div>
                     </div>
@@ -536,12 +594,12 @@
                     <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
                         <div class="footer-menu">
                             <ul>
-                                <li><a href="#">Início</a></li>
-                                <li><a href="#">Brinquedos</a></li>
-                                <li><a href="#">Sobre</a></li>
-                                <li><a href="#">Eventos</a></li>
-                                <li><a href="#">Dúvidas</a></li>
-                                <li><a href="#">Contatos</a></li>
+                                <li><a href="#Inicio">Início</a></li>
+                                <li><a href="#Brinquedos">Brinquedos</a></li>
+                                <li><a href="#Sobre">Sobre</a></li>
+                                <li><a href="#Eventos">Eventos</a></li>
+                                <li><a href="#Duvidas">Dúvidas</a></li>
+                                <li><a href="#Contatos">Contatos</a></li>
                             </ul>
                         </div>
                     </div>
@@ -555,6 +613,8 @@
     <script src="/assets/js/home.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="https://kit.fontawesome.com/3fcdf21787.js" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
