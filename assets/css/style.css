@@ -7,12 +7,13 @@ body {
 }
 
 
-.line-left, .line-right {
+.line-left,
+.line-right {
   position: absolute;
   top: 50%;
   width: 40%;
   height: 1px;
-  background-color: black; 
+  background-color: black;
 }
 
 .line-left {
@@ -31,6 +32,11 @@ body {
   flex-direction: column;
 }
 
+.container-nav-contents {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
 .navbar-overlay {
   position: absolute;
   top: 0;
@@ -46,8 +52,20 @@ body {
   margin-right: 8px;
 }
 
-.nav-link:hover{
+.nav-link:hover {
   color: #74b652;
+}
+
+.navbar-collapse {
+  padding: 10px;
+}
+
+.collapse.show {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.collapse.show .nav-link {
+  color: white;
 }
 
 
@@ -125,6 +143,13 @@ body {
 
 /* Style for floating section */
 
+.toys-section {
+  background-image: url('../images/footer-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 100px 50px 100px 50px;
+}
+
 .floating-section {
   position: relative;
   top: -12vh;
@@ -136,8 +161,8 @@ body {
 }
 
 .toys-cards-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-direction: row;
   gap: 20px;
 }
 
@@ -187,10 +212,11 @@ body {
 
 }
 
-.btn-toys-acquire:hover{
+.btn-toys-acquire:hover {
   background-color: #5c9141;
 
 }
+
 
 
 /* Style for events section */
@@ -426,7 +452,7 @@ body {
 .statistics-section .row {
   position: absolute;
   top: 0;
-  left: 44%;
+  left: 50%;
   transform: translateX(-50%);
   width: 82%;
   height: 100%;
@@ -437,12 +463,12 @@ body {
 
 }
 
-.btn-container {
+/* .btn-container {
   position: absolute;
   right: 100px;
   top: 50%;
   transform: translateY(-50%);
-}
+} */
 
 .btn-hire-now {
   width: 200px;
@@ -467,6 +493,13 @@ body {
 }
 
 /* Style for FAQ section */
+
+.faq-section-container {
+  background-image: url('../images/footer-bg.webp');
+  background-size: cover;
+  background-position: center;
+  padding: 60px 50px 60px 50px;
+}
 
 .faq-section {
   text-align: center;
@@ -549,17 +582,18 @@ body {
   .text-content {
     padding-left: 0;
     padding-top: 20px;
+    text-align: center;
   }
 }
 
 
 /* Style for contact section */
 
-.contact-section{
+.contact-section {
   padding: 80px 0 80px 0;
 }
 
-.contact-section .row{
+.contact-section .row {
   justify-content: center;
 }
 
@@ -733,7 +767,7 @@ body {
 .footer-social-posts {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px; 
+  gap: 10px;
 }
 
 .instagram-card {
@@ -744,8 +778,8 @@ body {
   text-align: center;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   transition: transform 0.3s ease;
-  height: 200px; 
-  width: 100%; 
+  height: 200px;
+  width: 100%;
 }
 
 .instagram-card:hover {
@@ -758,14 +792,14 @@ body {
   height: 100%;
   background-size: cover;
   background-position: center;
-  padding-bottom: 100%; 
+  padding-bottom: 100%;
   transition: transform 0.3s ease-in-out;
 }
 
 
 
 .instagram-post:hover .instagram-post-image {
-  transform: scale(1.1); 
+  transform: scale(1.1);
 }
 
 .instagram-card-image {
@@ -774,7 +808,7 @@ body {
   background-size: cover;
   background-position: center;
   transition: transform 0.3s ease;
-  padding-bottom: 100%; 
+  padding-bottom: 100%;
 }
 
 /* Style for btn back to top */
@@ -785,36 +819,186 @@ body {
   right: 20px;
   width: 50px;
   height: 50px;
-  display: flex; 
-  align-items: center; 
-  justify-content: center; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
   z-index: 1000;
-  background-color: #023E8A; 
-  border-radius: 4px; 
+  background-color: #023E8A;
+  border-radius: 4px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-  opacity: 0; 
-  visibility: hidden; 
-  transform: translateY(20px); 
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
   transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
 }
 
 #backToTopBtn i {
-  color: white; 
+  color: white;
   font-size: 24px;
-  margin: 0; 
-  padding: 0; 
-  line-height: normal; 
+  margin: 0;
+  padding: 0;
+  line-height: normal;
 }
 
 #backToTopBtn.show {
-  opacity: 1; 
-  visibility: visible; 
-  transform: translateY(0); 
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }
 
 #backToTopBtn.hide {
-  opacity: 0; 
-  visibility: hidden; 
-  transform: translateY(20px); 
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+}
+
+/* Style for mobile general */
+
+
+@media (max-width: 768px) {
+  .toys-cards-container {
+    flex-direction: column;
+  }
+
+  .toy-card {
+    width: 300px;
+    height: 600px;
+  }
+
+  .events-container {
+    padding: 0;
+    padding-bottom: 50px;
+  }
+
+  #backToTopBtn {
+    right: 35px;
+  }
+
+  .container-nav {
+    padding: 0;
+  }
+
+  .navbar-brand img {
+    width: 100px;
+    height: 80px;
+  }
+
+  .container-nav-contents {
+    padding-left: 20px;
+    padding-right: 40px;
+  }
+
+  .toys-section {
+    padding: 20px 40px 20px 40px;
+  }
+
+  .video-container video {
+    height: fit-content;
+  }
+
+  .toys-section {
+    background-image: url(../images/footer-bg-without-top-bottom.jpg)
+  }
+
+  .title-video-section {
+    margin-bottom: 40px !important;
+    margin-top: 20px !important;
+  }
+
+  .statistics-section .col-3 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .statistics-section {
+    height: 800px;
+  }
+
+  .statistics-section .row {
+    left: 53%;
+    height: 80%;
+    padding: 0px;
+    padding-top: 10px;
+  }
+
+
+  .events-title {
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+
+  .event-item {
+    flex-direction: column;
+  }
+
+  .events-list {
+    max-height: 650px !important;
+    margin-top: 30px;
+  }
+
+  .stats-search {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .filter-select {
+    display: inline-flex;
+  }
+
+  .search-container {
+    justify-content: center;
+  }
+
+  .container-search {
+    display: flex;
+    width: fit-content;
+  }
+
+  .filter-select {
+    width: 100%;
+    margin-right: 0px !important;
+  }
+
+  .search-input {
+    width: fit-content;
+    margin-bottom: 10px;
+  }
+
+  .search-button {
+    height: max-content;
+    border-radius: 0px;
+  }
+
+  .faq-section-container {
+    padding: 40px 20px 40px 20px;
+  }
+
+  .faq-section h1 {
+    margin-bottom: 30px !important;
+  }
+
+  .contact-section {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    padding: 30px;
+  }
+
+  .contact-form-container {
+    margin-bottom: 40px;
+  }
+
+  .contact-infos-container {
+    margin-bottom: 35px;
+  }
+
+  .statistics-section .col-3 {
+    padding: 0;
+  }
+
 }
