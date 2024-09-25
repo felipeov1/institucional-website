@@ -234,9 +234,18 @@ body {
 }
 
 .search-container {
-  display: flex;
+  display: inline-flex;
   justify-content: flex-start;
   margin-bottom: 15px;
+}
+
+.container-search{
+  display: inline-flex;
+  margin-right: 10px;
+}
+
+.stats-search{
+  display: inline-flex;
 }
 
 .search-input {
@@ -572,6 +581,7 @@ body {
   height: 500px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
 }
 
 .text-content {
@@ -886,7 +896,7 @@ body {
 
   .container-nav-contents {
     padding-left: 20px;
-    padding-right: 40px;
+    padding-right: 20px;
   }
 
   .toys-section {
@@ -950,11 +960,12 @@ body {
   }
 
   .search-container {
+    display: flex;
     justify-content: center;
   }
 
   .container-search {
-    display: flex;
+    display: inline-flex;
     width: fit-content;
   }
 
@@ -999,6 +1010,21 @@ body {
 
   .statistics-section .col-3 {
     padding: 0;
+  }
+
+  .contact-infos-container{
+    align-content: flex-start !important;
+  }
+
+  .fast-acess{
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  .event-text{
+    margin-top: 20px;
   }
 
 }
