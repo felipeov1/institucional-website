@@ -24,6 +24,7 @@ $info = $informations;
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Toystop</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -35,6 +36,66 @@ $info = $informations;
     <a href="#Inicio" id="backToTopBtn" style="text-decoration: none;">
         <i class="fa-solid fa-angle-up"></i>
     </a>
+
+    <div class="developer-banner">
+        <p>Desenvolvido por<a href="https://www.berliozsolutions.com" target="_blank" class="company">Berlioz Solutions</a></p>
+        <a href="https://wa.me/5543999702073?text=Olá!%20Gostaria%20de%20falar%20sobre%20desenvolvimento%20de%20sites." target="_blank" class="contact-button">Entrar em contato</a>
+    </div>
+
+    <style>
+        .developer-banner {
+            background-color: #404044;
+            width: 100%;
+            padding: 10px 20px;
+            text-align: center;
+            color: white;
+            font-size: 14px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+
+        .developer-banner p {
+            margin: 0;
+            font-size: 18px;
+            padding-right: 20px;
+        }
+
+        .developer-banner .company{
+            margin-left: 3px;
+            color: white;
+        }
+        .developer-banner .company:hover{
+            color:  #3100DB;
+        }
+
+
+        .contact-button {
+            background-color: #3100DB;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-button:hover {
+            background-color: #2800B0;
+        }
+
+        @media (max-width: 768px) {
+            .developer-banner {
+                flex-direction: column;
+            }
+
+            .developer-banner p {
+                padding-right: 0;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
 
     <!-- start nav -->
     <nav id="Inicio" class="navbar navbar-expand-lg bg-body-tertiary navbar-overlay">
