@@ -219,6 +219,7 @@ $info = $informations;
                     justify-content: center;
                     align-items: center;">
                             <div class="stat-number number-item" data-target="100+">100+</div>
+                            <div class="stat-signal">%</div>
                         </div>
                         <div class="stat-name">De satisfação dos nossos clientes</div>
                     </div>
